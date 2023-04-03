@@ -18,13 +18,14 @@ function addExpance(e){
         "Expancediscription": newdiscription,
         "Categary":newcategery
     }
+    showondom(myObj)
     let myObj_sreialized = JSON.stringify(myObj);
     // console.log(myObj_sreialized)
     localStorage.setItem(newamount,myObj_sreialized)
     document.getElementById("amount").value="";
     document.getElementById("discription").value="";
     document.getElementById("categery").value="";
-    showondom(myObj)
+    
 }
 document.addEventListener("DOMContentLoaded",fatchlocaldata);
 function fatchlocaldata(){
